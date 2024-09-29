@@ -1,0 +1,85 @@
+export PS1="%m@ %1~ %#"
+
+echo "# robodora" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sarasaraokaki/robodora.git
+git push -u origin main
+
+git remote add origin https://github.com/sarasaraokaki/robodora.git
+git branch -M main
+git push -u origin main
+
+
+PATを生成する
+GitHubにログインします。
+GitHubの右上にあるプロフィールアイコンをクリックし、「Settings」を選択します。
+「Developer settings」→「Personal access tokens」→「Tokens (classic)」の順に進みます。
+「Generate new token」をクリックし、必要なスコープ（通常はrepoが必要）を選択してトークンを生成します。
+
+
+
+
+
+
+
+
+
+mol@MacBook-Pro robot % git add .  
+mol@MacBook-Pro robot % git status                                                         
+On branch r
+mol@MacBook-Pro robot % git remote -v
+origin	https://github.com/sarasaraokaki/robodora.git (fetch)
+origin	https://github.com/sarasaraokaki/robodora.git (push)
+mol@MacBook-Pro robot % git commit -m "Resolve merge conflicts"
+mol@MacBook-Pro robot % git pull --rebase origin r
+mol@MacBook-Pro robot % git push origin r
+To https://github.com/sarasaraokaki/robodora.git
+   9cb88f2..ec841c4  r -> r
+   
+   
+   
+
+mol@MacBook-Pro git % git push -u origin main
+Username for 'https://github.com': sarasaraokaki
+Password for 'https://sarasaraokaki@github.com': 
+mol@MacBook-Pro git % cd /Users/mol/git/robot
+mol@MacBook-Pro robot % git branch -M o                                                    
+mol@MacBook-Pro robot % git remote add origin https://github.com/sarasaraokaki/robodora.git
+
+
+cd /Users/mol/git/robot
+git pull origin r
+git checkout -b　r
+git init
+git branch -M r
+git remote add origin https://github.com/sarasaraokaki/robodora.git
+git commit -m "any commit"
+git add .
+git status
+git remote -v
+git commit -m "Resolve merge conflicts"
+git pull --rebase origin r
+git push origin r
+
+=================================================================================
+git init
+git branch -M r
+git remote add origin https://github.com/sarasaraokaki/robodora.git
+git commit -m "any commit"
+git add .
+git status
+git remote -v
+git commit -m "Resolve merge conflicts"
+git pull --rebase origin r
+git push origin r
+	Username for 'https://github.com': sarasaraokaki
+	Password for 'https://sarasaraokaki@github.com': ＜トークン＞
+	
+=================================================================================
+
+Hello! (:
+Oh! O:
+Ah... ):
